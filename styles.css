@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    font-family: "Habibi", serif;
+    font-size: 1.25em;
+    --green:#06A816;
+    --orange:#E75D02;
+    --black:#000000;
+    --white:#ffffff;
+}
+
+body {
+    min-width: 428px;
+}
+
+@media screen and (min-width: 320px) {
+    header, footer {
+        background-color: #06A816;
+        color: #ffffff;
+        border: 1px solid #06A816;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Irish Grover', serif;
+        padding-bottom: 20px;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    header p {
+        text-align: center;
+        font-style: italic;
+        padding-bottom: 20px;
+    }
+
+    nav h2 {
+        visibility: hidden;
+    }
+
+    nav a {
+        text-decoration: none;
+        background-color: #E75D02;
+        display: block;
+        margin: 20px;
+        padding: 10px;
+        color:#ffffff;
+        text-align: center;
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+    }
+    
+    #fruittag, #vegetag {
+        margin: 20px 50px 20px 50px;        
+
+    }
+
+    #toptag {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+    section h2 {
+        font-family: 'Irish Grover', serif;
+        font-size: 28px;
+        padding: 10px;
+    }
+    section p {
+        font-size: medium;
+        line-height: normal;
+        padding: 10px;
+        }
+
+    section h3 {
+        font-family: 'Irish Grover', serif;
+        font-size: 20px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 20px 40px 20px;
+    }
+
+    .apple, .orange, .peaches, .strawberries, .blueberries, .raspberries, .cherries, .pears, .plums, .grapes, .watermelons, .cantalopes, .broccoli, .lettuce, .eggplant, .spinach, .beansprout, .peas, .bellpepper, .carrot, .potato, .cucumber, .tomato, .radish {
+        position: absolute;
+        background-color: #000000;
+        opacity: 75%;
+        padding: 10px 35px 10px 35px;
+        max-width: 70px;
+        color:#ffffff;
+        font-size: 20px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    footer h2 {
+        text-align: center;
+        margin: 40px 0 10px 0;
+    }
+
+    address {
+        text-align: center;
+        line-height: 30px;
+    }
+
+    #hours {
+        text-align: center;
+        line-height: 30px;
+        margin: 15px;
+    }
+
+    #hours div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    dt, dl {
+        margin: 0 5px 0 5px;
+    }
+
+    small {
+        display: block;
+        background-color: #ffffff;
+        padding: 5px 0 15px 0;
+        text-align: center;
+        color:#06A816;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header, footer {
+        background-color: #06A816;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 20px 20px 0px 20px;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    #fruittag, #vegetag {
+        min-width: 300px;
+        padding: 10px;
+        margin: auto;
+    }
+
+    #soldfruits, #soldvegetables {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        }
+
+    #soldfruits h3, #soldvegetables h3 {
+        grid-column: span 2;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: first baseline;
+        gap: 20px;
+        padding-bottom: 10px;
+        }
+}
+
+@media screen and (min-width: 1024px) {
+    header, footer {
+        background-color: #06A816;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+    ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #fruittag, #vegetag {
+        font-size: 17px;
+        transform: scale(0.92);
+        margin: 0;
+    }
+
+    #soldfruits, #soldvegetables {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+
+    #soldfruits h3, #soldvegetables h3 {
+        grid-column: span 3;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #contact, #hours {
+        display: inline-flex;
+        flex: 1;
+        justify-content: space-evenly;
+        align-items:start;
+        }
+}
+
+@media screen and (min-width: 1280px) {
+    header, footer {
+        background-color: #06A816;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    #soldfruits, #soldvegetables {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+    #soldfruits h3, #soldvegetables h3 {
+        grid-column: span 4;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
