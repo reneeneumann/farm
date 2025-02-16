@@ -1,5 +1,7 @@
+/* -------------------- IMPORTED FONTS -------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
 
+/*-------------------- CSS REST ---------------------------------------------------*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -49,6 +51,7 @@ table {
 	border-spacing: 0;
 }
 
+/* -------------------- ROOT VARIABLES --------------------------------------- */
 :root {
     font-family: "Habibi", serif;
     font-size: 1.25em;
@@ -62,6 +65,7 @@ body {
     min-width: 428px;
 }
 
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 @media screen and (min-width: 320px) {
     header, footer {
         background-color: #06A816;
@@ -184,6 +188,8 @@ body {
     }
 }
 
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+
 @media screen and (min-width: 768px) {
     header, footer {
         background-color: #06A816;
@@ -230,6 +236,8 @@ body {
         padding-bottom: 10px;
         }
 }
+
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
 
 @media screen and (min-width: 1024px) {
     header, footer {
@@ -286,6 +294,8 @@ body {
         align-items:start;
         }
 }
+
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
 
 @media screen and (min-width: 1280px) {
     header, footer {
